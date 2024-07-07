@@ -1,0 +1,178 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll; /* Hacer que la página tenga un scrollbar */
+}
+
+/* Estilo para el encabezado */
+#main-header {
+    background-color: #fff; /* Cambiado a blanco */
+    color: #000; /* Cambiado a negro */
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Contenedor del menú principal */
+#main-menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Área del menú */
+#menu-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Menú izquierdo y derecho */
+.menu-izq, .menu-der {
+    display: flex;
+    align-items: center;
+}
+
+.menu-izq ul, .menu-der ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu-izq li, .menu-der li {
+    margin-right: 20px;
+}
+
+/* Estilos para los enlaces del menú */
+.menu-izq li a, .menu-der li a {
+    color: #000; /* Texto negro */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-izq li a:hover, .menu-der li a:hover {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.menu-der ul a img {
+    width: 30px; /* Hacer el carrito más pequeño */
+    height: auto;
+}
+
+.menu-der ul a.text-menu {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para la sección principal */
+.container {
+    width: 100%; /* Ocupar todo el ancho */
+    margin-top: 80px; /* Ajuste para compensar el header fijo */
+    padding: 20px;
+    background-color: #fff;
+    height: calc(100vh - 140px);
+    overflow-y: auto; /* Hacer la sección desplazable */
+}
+
+/* Estilo para el pie de página */
+.main-footer {
+    background-color: #006900; /* Color verde */
+    color: #fff; /* Texto blanco */
+    padding: 20px 0;
+    position: relative;
+    z-index: 1000;
+}
+
+/* Contenedor de información en el pie de página */
+.container-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.list {
+    list-style: none;
+}
+
+.list li {
+    margin-bottom: 10px;
+}
+
+.foo-link {
+    color: #fff; /* Enlaces de texto blanco */
+    text-decoration: none;
+}
+
+.foo-link:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor de íconos sociales y métodos de pago */
+.social-payments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.social {
+    margin-bottom: 20px;
+}
+
+.social-icons img, .payment-icons img {
+    margin: 0 10px;
+}
+
+.description {
+    flex: 1;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Estilo para la parte inferior del pie de página */
+.footer-bottom {
+    background-color: #006900; /* Más oscuro que el fondo principal del pie de página */
+    color: #fff; /* Texto blanco */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-bottom a {
+    color: #fff; /* Enlaces de texto blanco */
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
